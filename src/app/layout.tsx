@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gobind Rai Engg. Works",
+  title: "Bakhtawar Mechanical Works",
   description: "We build tractor parts that refuse to quit.",
   keywords: [
     "tractor parts",
@@ -24,23 +24,23 @@ export const metadata: Metadata = {
     "farm equipment",
     "industrial manufacturing"
   ],
-  authors: [{ name: "Gobind Rai Engg. Works" }],
-  creator: "Gobind Rai Engg. Works",
-  publisher: "Gobind Rai Engg. Works",
+  authors: [{ name: "Bakhtawar Mechanical Works" }],
+  creator: "Bakhtawar Mechanical Works",
+  publisher: "Bakhtawar Mechanical Works",
   metadataBase: new URL((process.env.PROD_URL as string)), //change in production
 
   // OpenGraph (for WhatsApp, LinkedIn, FB)
   openGraph: {
-    title: "Gobind Rai Engg. Works",
+    title: "Bakhtawar Mechanical Works",
     description: "We build tractor parts that refuse to quit.",
     url: (process.env.PROD_URL as string),
-    siteName: "Gobind Rai Engg. Works",
+    siteName: "Bakhtawar Mechanical Works",
     images: [
       {
         url: "https://placehold.co/600x400",
         width: 1200,
         height: 630,
-        alt: "Gobind Rai Engg. Works"
+        alt: "Bakhtawar Mechanical Works"
       }
     ],
     locale: "en_IN",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "Gobind Rai Engg. Works",
+    title: "Bakhtawar Mechanical Works",
     description: "We build tractor parts that refuse to quit.",
     images: ["https://placehold.co/600x400"],
   },

@@ -13,7 +13,7 @@ const Header: React.FC = () => {
 
   return (
     <nav className="fixed w-full top-0 z-[999]">
-         <section className="border border-gray-50/10 p-2 m-2 flex justify-between items-center bg-gray-400/20 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm">
+         <section className=" p-2 py-4 flex justify-center items-center gap-6 bg-white/50 dark:bg-black/50 bg-clip-padding backdrop-filter backdrop-blur-sm">
            
            {/* Left: Logo */}
            <div className="flex gap-2 items-center">
@@ -30,13 +30,13 @@ const Header: React.FC = () => {
    
            {/* Desktop Nav */}
            <div className="hidden md:flex gap-2">
-             <Link href="/"><Button variant="ghost">Home</Button></Link>
-             <Link href="#about"><Button variant="ghost">About</Button></Link>
-             <Link href="#products"><Button variant="ghost">Products</Button></Link>
-             <Link href="#youtube"><Button variant="ghost">Videos</Button></Link>
+             <Link href="/"><Button className='rounded-full' variant="ghost">Home</Button></Link>
              <Link href="#contact">
-               <Button variant="ghost">Contact</Button>
+               <Button className='rounded-full' variant="ghost">Contact</Button>
              </Link>
+             <Link href="#products"><Button className='rounded-full' variant="ghost">Products</Button></Link>
+             <Link href="#about"><Button className='rounded-full' variant="ghost">About</Button></Link>
+             <Link href="#youtube"><Button className='rounded-full' variant="ghost">Videos</Button></Link>
            </div>
    
            {/* Theme + Hamburger */}
@@ -45,7 +45,7 @@ const Header: React.FC = () => {
              <Button
                variant="ghost"
                size="icon"
-               className="md:hidden"
+               className="md:hidden rounded-full"
                onClick={() => setOpen(!open)}
              >
                {open ? <X /> : <Menu />}
