@@ -14,12 +14,13 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Imperial_Script, Titan_One, Playball } from "next/font/google";
+import { Imperial_Script, Titan_One, Playball,Bowlby_One_SC, Merriweather_Sans
+ } from "next/font/google";
 import Image from "next/image";
 import { TextAnimate } from "../ui/text-animate";
 import { AuroraBackground } from "../ui/aurora-background";
 
-const imperial = Imperial_Script({
+const merriWeather = Merriweather_Sans({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -28,6 +29,10 @@ const titan = Titan_One({
   weight: ["400"],
 });
 const playball = Playball({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+const bowlby = Bowlby_One_SC({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -120,16 +125,6 @@ const HeroSection: React.FC = () => {
       id="herosection"
       className="h-screen flex gap-2 md:gap-8 items-end justify-center relative overflow-hidden"
     >
-      {/*<div className="absolute z-[-10] w-screen h-screen">
-        <Image
-          alt="Hero Background"
-          src="https://placehold.co/600x400"
-          width={590}
-          height={590}
-          unoptimized
-          className="absolute right-0 bottom-0 object-fit opacity-15 dark:opacity-10"
-        />
-      </div>*/}
       <div className="absolute z-[-10] w-screen h-screen lg:block hidden">
         <Image
           alt="Hero Background"
@@ -147,7 +142,6 @@ const HeroSection: React.FC = () => {
       />
       <div className="flex flex-col gap-2 items-center justify-center h-[90vh]">
         <div className="text-center flex flex-col items-center justify-center px-2 gap-1">
-          {/*<div className="absolute inset-0 bg-linear-to-t from-[#63A361] dark:from-violet-600/50 via-transparent to-transparent z-0 pointer-events-none" />*/}
           <div className="group rounded-full border border-black/5  text-base transition-all ease-in hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800">
             <div className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
               <span
@@ -161,7 +155,7 @@ const HeroSection: React.FC = () => {
           <TextAnimate
             animation="blurIn"
             as="p"
-            className={`text-6xl leading-none text-center font-bold ${titan.className} text-[#432323] dark:text-[#F7E396] text-shadow-lg`}
+            className={`text-7xl leading-none text-center font-bold ${bowlby.className} text-[#432323] dark:text-[#F7E396] text-shadow-lg`}
           >
             Bakhtawar
             
@@ -169,36 +163,22 @@ const HeroSection: React.FC = () => {
           <TextAnimate
             animation="blurIn"
             as="p"
-            className={`text-6xl leading-none text-center font-bold ${titan.className} text-[#432323] dark:text-[#F7E396] text-shadow-lg`}
-          >
-            Mechanical Works
-            
+            className={`text-7xl leading-none text-center font-bold ${bowlby.className} text-[#432323] dark:text-[#F7E396] text-shadow-lg`}
+          >Mechanical Works            
           </TextAnimate>
-
           <TextAnimate
             animation="blurInDown"
             as="h1"
-            className={`text-4xl text-center font-bold ${titan.className} text-[#432323] dark:text-[#FCF6D9] text-shadow-lg`}
-          >
-            Talwandi Bhai
-            {/* <span className={`text-7xl ${imperial.className}`}>store</span> you need */}
+            className={`text-4xl text-center font-bold ${bowlby.className} text-[#432323] dark:text-[#FCF6D9] text-shadow-lg`}
+          >Talwandi Bhai
           </TextAnimate>
-
-          {/*<p
-            className={`text-center  font-semibold text-[#D96F32] dark:text-[#FFFD8F] ${titan.className}`}
-          ></p>*/}
           <TextAnimate
             animation="blurInDown"
             as="h1"
-            className={`text-center  font-semibold text-[#D96F32] dark:text-[#FCF6D9] ${titan.className}`}
+            className={`text-center  font-bold text-[#D96F32] dark:text-[#FCF6D9] ${merriWeather.className}`}
           >
             Expert Tractor Parts Manufacturing
           </TextAnimate>
-
-          {/*<p className={`dark:text-[#FFFD8F] ${playball.className}`}>
-            Our mission is to provide high-quality and exceptional customer
-            service.
-          </p>*/}
         </div>
         <div className="flex gap-10">
           <Link href="# ">
