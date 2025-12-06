@@ -19,7 +19,7 @@ const Header: React.FC = () => {
            <div className="flex gap-2 items-center">
              <Image
                unoptimized
-               src="https://placehold.co/600x400"
+               src="/images/logo.jpg"
                alt="Logo"
                width={40}
                height={40}

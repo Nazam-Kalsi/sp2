@@ -11,40 +11,31 @@ const titan = Titan_One({
 
 export const videoData = [
   {
-    id: "pybdNqriW3U",
+    id: "ZUfmumfhirw",
     title: "",
-    thumbnail: "https://www.youtube.com/watch?v=pybdNqriW3U"
+    thumbnail: "https://www.youtube.com/watch?v=ZUfmumfhirw"
   },
   {
-    id: "W130SEPoLw0",
+    id: "RHS5cxgSyrk",
     title: "",
-    thumbnail: "https://www.youtube.com/watch?v=W130SEPoLw0"
+    thumbnail: "https://www.youtube.com/watch?v=RHS5cxgSyrk"
   },
   {
-    id: "r4HBgmrbCR8",
-    title: "Justin Bieber - Sorry",
-    thumbnail: "https://www.youtube.com/watch?v=r4HBgmrbCR8"
+    id: "PfNXsp_66HM",
+    title: "",
+    thumbnail: "https://www.youtube.com/watch?v=PfNXsp_66HM"
   },
   {
-    id: "dOA4-EREHyg",
+    id: "Ggp2pK3jKYY",
     title: "",
-    thumbnail: "https://www.youtube.com/watch?v=dOA4-EREHyg"
+    thumbnail: "https://www.youtube.com/watch?v=Ggp2pK3jKYY"
   },
   {
-    id: "xwoH98hA43k",
+    id: "7O74Y1AHtDI",
     title: "",
-    thumbnail: "https://www.youtube.com/watch?v=xwoH98hA43k"
+    thumbnail: "https://www.youtube.com/watch?v=7O74Y1AHtDI"
   },
-  {
-    id: "rBVn65lY4xQ",
-    title: "",
-    thumbnail: "https://www.youtube.com/watch?v=rBVn65lY4xQ"
-  },
-  {
-    id: "OZLsgAtDDrw",
-    title: "",
-    thumbnail: "https://www.youtube.com/watch?v=OZLsgAtDDrw"
-  }
+ 
 ];
 
 
@@ -53,10 +44,11 @@ export const videoData = [
   const embedUrl = `https://www.youtube.com/embed/${id}?autoplay=1&mute=0`;
 
   return (
+    // text-[#432323] dark:text-[#FFFD8F]
     <>
       {/* Thumbnail Card */}
       <div
-        className="w-full max-w-sm cursor-pointer rounded-xl overflow-hidden hover:scale-[1.02] transition-transform flex items-center justify-center bg-linear-to-b from-[#63A361] dark:from-violet-700 to-transparent hover:shadow-xl p-3 mx-2"
+        className="w-full max-w-sm cursor-pointer rounded-xl overflow-hidden hover:scale-[1.02] transition-transform flex items-center justify-center bg-[#432323] dark:bg-[#FFFD8F] hover:shadow-xl p-3 mx-2"
         onClick={() => setOpen(true)}
       >
                  
@@ -98,8 +90,8 @@ export const videoData = [
 
 const YoutubeVideos: React.FC = () => {
   return (
-    <section id='youtube' className='space-y-2 py-16 bg-linear-to-b from-white to-[#63A361] dark:to-transparent dark:from-transparent'>
-      <h1 className={`text-center text-3xl sm:text-4xl md:text-5xl font-bold  p-4  text-[#63A361] dark:text-violet-700 text-shadow-lg ${titan.className}`}>Youtube Videos</h1>
+    <section id='youtube' className='space-y-2 pt-16'>
+      <h1 className={`text-center text-3xl sm:text-4xl md:text-5xl font-bold  p-4  text-[#432323] dark:text-[#FFFD8F] text-shadow-lg ${titan.className}`}>Youtube Videos</h1>
       <div className="flex items-center justify-center gap-4 flex-wrap">
         {videoData.map((v,i)=>{
           return(
