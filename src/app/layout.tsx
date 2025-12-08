@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Bakhtawar Mechanical Works",
     images: [
       {
-        url: "https://placehold.co/600x400",
+        url: "https://sp2-rosy.vercel.app/images/logo.jpg",
         width: 1200,
         height: 630,
         alt: "Bakhtawar Mechanical Works"
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bakhtawar Mechanical Works",
     description: "We build tractor parts that refuse to quit.",
-    images: ["https://placehold.co/600x400"],
+    images: ["https://sp2-rosy.vercel.app/images/logo.jpg"],
   },
 
   // Icons
