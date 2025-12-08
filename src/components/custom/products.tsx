@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Titan_One } from "next/font/google";
+import { Bowlby_One_SC } from "next/font/google";
 import { FocusCards } from '../ui/focus-cards';
 
-const titan = Titan_One({
+const bowlby = Bowlby_One_SC({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -53,7 +53,7 @@ const Products: React.FC = () => {
   
    return (
      <div className='p-4 flex flex-col gap-4 py-16' id='products'>
-       <h2 className={`text-5xl pb-3 font-bold text-center  text-[#432323] dark:text-[#FFFD8F] text-shadow-lg ${titan.className}`}>Our Products</h2>
+       <h2 className={`md:text-5xl text-4xl pb-3 font-bold text-center  text-[#432323] dark:text-[#FFFD8F] text-shadow-lg ${bowlby.className}`}>Our Products</h2>
      <FocusCards cards={cards} />
      </div>
    );

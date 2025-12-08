@@ -14,21 +14,13 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Imperial_Script, Titan_One, Playball,Bowlby_One_SC, Merriweather_Sans
- } from "next/font/google";
+import { Bowlby_One_SC,Charm } from "next/font/google";
 import Image from "next/image";
 import { TextAnimate } from "../ui/text-animate";
 import { AuroraBackground } from "../ui/aurora-background";
 
-const merriWeather = Merriweather_Sans({
-  subsets: ["latin"],
-  weight: ["400"],
-});
-const titan = Titan_One({
-  subsets: ["latin"],
-  weight: ["400"],
-});
-const playball = Playball({
+
+const charm = Charm({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -45,7 +37,7 @@ export const Social = ({ className }: { className?: string }) => {
     Mail: Mail,
   };
   return (
-    <div className={`flex items-center justify-center gap-6 ${className}`}>
+    <div className={`flex items-center justify-center flex-wrap gap-6 ${className}`}>
       {[
         {
           name: "Facebook",
@@ -145,7 +137,7 @@ const HeroSection: React.FC = () => {
           <div className="group rounded-full border border-black/5  text-base transition-all ease-in hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800">
             <div className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
               <span
-                className={`${playball.className} text-[#432323] dark:text-[#FFFD8F]`}
+                className={`${charm.className} text-[#432323] dark:text-[#FFFD8F]`}
               >
                  1976 estd.
               </span>
@@ -155,7 +147,7 @@ const HeroSection: React.FC = () => {
           <TextAnimate
             animation="blurIn"
             as="p"
-            className={`text-7xl leading-none text-center font-bold ${bowlby.className} text-[#432323] dark:text-[#F7E396] text-shadow-lg`}
+            className={`md:text-7xl text-5xl  leading-none text-center font-bold ${bowlby.className} text-[#432323] dark:text-[#F7E396] text-shadow-lg`}
           >
             Bakhtawar
             
@@ -163,31 +155,31 @@ const HeroSection: React.FC = () => {
           <TextAnimate
             animation="blurIn"
             as="p"
-            className={`text-7xl leading-none text-center font-bold ${bowlby.className} text-[#432323] dark:text-[#F7E396] text-shadow-lg`}
+            className={`md:text-7xl text-5xl leading-none text-center font-bold ${bowlby.className} text-[#432323] dark:text-[#F7E396] text-shadow-lg`}
           >Mechanical Works            
           </TextAnimate>
           <TextAnimate
             animation="blurInDown"
             as="h1"
-            className={`text-4xl text-center font-bold ${bowlby.className} text-[#432323] dark:text-[#FCF6D9] text-shadow-lg`}
+            className={`md:text-4xl text-2xl text-center font-bold ${bowlby.className} text-[#432323] dark:text-[#FCF6D9] text-shadow-lg`}
           >Talwandi Bhai
           </TextAnimate>
           <TextAnimate
             animation="blurInDown"
             as="h1"
-            className={`text-center  font-bold text-[#D96F32] dark:text-[#FCF6D9] ${merriWeather.className}`}
+            className={`text-center  font-bold text-[#D96F32] dark:text-[#FCF6D9] ${charm.className}`}
           >
-            Expert Tractor Parts Manufacturing
+            Manufacturing perfection
           </TextAnimate>
         </div>
         <div className="flex gap-10">
-          <Link href="# ">
+          <Link href="#products">
             <div className="group rounded-full border border-black/5  text-base transition-all ease-in bg-white hover:-translate-y-1 hover:scale-105 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800">
               <div className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
                 <TextAnimate
                   animation="blurIn"
                   as="h1"
-                  className={`${playball.className} text-[#432323] dark:text-[#FFFD8F]`}
+                  className={`${charm.className} text-[#432323] dark:text-[#FFFD8F]`}
                 >
                   ✨ Explore Products
                 </TextAnimate>

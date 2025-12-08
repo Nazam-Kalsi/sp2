@@ -1,12 +1,12 @@
 import * as React from "react";
-import { Titan_One, Satisfy } from "next/font/google";
+import { Bowlby_One_SC, Charm } from "next/font/google";
 import Image from "next/image";
 
-const titan = Titan_One({
+const bowlby = Bowlby_One_SC({
   subsets: ["latin"],
   weight: ["400"],
 });
-const satisify = Satisfy({
+const charm = Charm({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -45,31 +45,35 @@ const About: React.FC = () => {
       <div className="absolute z-[10] w-screen h-screen">
         <Image
           alt="Hero Background"
-          src="https://placehold.co/600x400"
+          src="/images/6.png"
           width={590}
           height={590}
           unoptimized
-          // fill
+
           className="absolute left-0 sm:left-[25%] bottom-0 object-fit opacity-15 "
+        />
+        <Image
+          alt="Hero Background"
+          src="/images/7.png"
+          width={590}
+          height={590}
+          unoptimized
+          className="absolute sm:hidden left-0 sm:left-[25%] top-0 object-fit opacity-15 "
         />
       </div>
       <div className="w-full text-center font-normal">
         <h1
-          className={`text-3xl  sm:text-4xl md:text-5xl text-[#FFFD8F] text-shadow-lg ${titan.className} pb-1`}
+          className={`text-3xl  sm:text-4xl md:text-5xl text-[#FFFD8F] text-shadow-lg ${bowlby.className} pb-1`}
         >
           The Company Behind the Parts
         </h1>
 
-        <h5 className="text-sm sm:text-base md:text-sm text-slate-200 leading-none dark:text-gray-300 font-sans pb-3">
-          Moving forward with a vision built around people and progress.
-        </h5>
-
-        <div className="w-3/4 mx-auto text-sm sm:text-base md:text-lg text-justify leading-normal font-sans">
+      <div className="w-3/4 mx-auto text-sm sm:text-base md:text-lg text-justify leading-normal font-sans">
           <p>
-          Established in 1976 , <span className={`text-[#FFFD8F] ${satisify.className} text-shadow-lg`}>&nbsp;Bakhtawar Mechanical Works,</span> began with a simple vision — to provide reliable, high-quality products backed by honest service. What started as a small workshop has grown into a trusted name, serving customers across multiple industries for more than four decades.
+          Established in 1976 ,<span className={`text-[#FFFD8F] ${charm.className} text-shadow-lg`}>&nbsp;Bakhtawar Mechanical Works,</span> began with a simple vision — to provide reliable, high-quality products backed by honest service. What started as a small workshop has grown into a trusted name, serving customers across multiple industries for more than four decades.
           <br/>
           <br/>
-          With over   <span className={`text-[#FFFD8F] ${satisify.className} text-shadow-lg`}>&nbsp;40+ years</span> of experience, we have continuously adapted to new technologies, changing customer needs, and modern manufacturing standards. Our journey is built on hard work, innovation, and a commitment to excellence that has stayed unchanged since the day we started.
+          With over   <span className={`text-[#FFFD8F] ${charm.className} text-shadow-lg`}>&nbsp;40+ years</span> of experience, we have continuously adapted to new technologies, changing customer needs, and modern manufacturing standards. Our journey is built on hard work, innovation, and a commitment to excellence that has stayed unchanged since the day we started.
           <br/>          
           <br/>          
           Our long presence in the market has allowed us to understand industry demands deeply. We believe in building strong relationships, offering on-time service, and maintaining transparency in every project we undertake.

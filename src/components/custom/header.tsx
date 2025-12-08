@@ -23,20 +23,20 @@ const Header: React.FC = () => {
                alt="Logo"
                width={40}
                height={40}
-               className="rounded-full"
+               className="rounded-full dark:invert invert-0"
              />
              {/*<p className="font-semibold">Gobind Rai Engg. Works</p>*/}
            </div>
    
            {/* Desktop Nav */}
            <div className="hidden md:flex gap-2">
-             <Link href="/"><Button className='rounded-full' variant="ghost">Home</Button></Link>
+             <Link href="/"><Button className='rounded-full text-[#432323] dark:text-[#FFFD8F]' variant="ghost">Home</Button></Link>
              <Link href="#contact">
-               <Button className='rounded-full' variant="ghost">Contact</Button>
+               <Button className='rounded-full text-[#432323] dark:text-[#FFFD8F]' variant="ghost">Contact</Button>
              </Link>
-             <Link href="#products"><Button className='rounded-full' variant="ghost">Products</Button></Link>
-             <Link href="#about"><Button className='rounded-full' variant="ghost">About</Button></Link>
-             <Link href="#youtube"><Button className='rounded-full' variant="ghost">Videos</Button></Link>
+             <Link href="#products"><Button className='rounded-full text-[#432323] dark:text-[#FFFD8F]' variant="ghost">Products</Button></Link>
+             <Link href="#about"><Button className='rounded-full text-[#432323] dark:text-[#FFFD8F]' variant="ghost">About</Button></Link>
+             <Link href="#youtube"><Button className='rounded-full text-[#432323] dark:text-[#FFFD8F]' variant="ghost">Videos</Button></Link>
            </div>
    
            {/* Theme + Hamburger */}

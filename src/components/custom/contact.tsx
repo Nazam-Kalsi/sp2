@@ -3,10 +3,10 @@
 "use client";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Titan_One } from "next/font/google";
+import { Bowlby_One_SC } from "next/font/google";
 import { SendIcon } from "lucide-react";
 
-const titan = Titan_One({
+const bowly = Bowlby_One_SC({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
       <div className="relative w-full flex flex-col items-end justify-center gap-4 px-4 sm:px-6 py-12">
         <div className="relative z-10 border p-6 sm:p-8 w-full sm:w-[80%] md:w-[65%] lg:w-[50%] rounded-lg bg-white dark:bg-black shadow-md">
           <h2
-            className={`text-2xl sm:text-3xl font-bold text-center w-full text-[#432323] dark:text-[#FFFD8F] ${titan.className}`}
+            className={`text-2xl sm:text-3xl font-bold text-center w-full text-[#432323] dark:text-[#FFFD8F] ${bowly.className}`}
           >
             Contact Us
           </h2>

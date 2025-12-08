@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Titan_One } from "next/font/google";
+import { Bowlby_One_SC } from "next/font/google";
 
-const titan = Titan_One({
+const bowlby = Bowlby_One_SC({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -48,7 +48,7 @@ export const videoData = [
     <>
       {/* Thumbnail Card */}
       <div
-        className="w-full max-w-sm cursor-pointer rounded-xl overflow-hidden hover:scale-[1.02] transition-transform flex items-center justify-center bg-[#432323] dark:bg-[#FFFD8F] hover:shadow-xl p-3 mx-2"
+        className="w-full max-w-sm cursor-pointer rounded-xl overflow-hidden hover:scale-[1.02] transition-transform flex items-center justify-center bg-[#432323] dark:bg-[#FFFD8F] hover:shadow-xl p-2 mx-2"
         onClick={() => setOpen(true)}
       >
                  
@@ -90,8 +90,8 @@ export const videoData = [
 
 const YoutubeVideos: React.FC = () => {
   return (
-    <section id='youtube' className='space-y-2 pt-16'>
-      <h1 className={`text-center text-3xl sm:text-4xl md:text-5xl font-bold  p-4  text-[#432323] dark:text-[#FFFD8F] text-shadow-lg ${titan.className}`}>Youtube Videos</h1>
+    <section id='youtube' className='space-y-2 pt-16 px-4'>
+      <h1 className={`text-center text-3xl sm:text-4xl md:text-5xl font-bold  p-4  text-[#432323] dark:text-[#FFFD8F] text-shadow-lg ${bowlby.className}`}>Youtube Videos</h1>
       <div className="flex items-center justify-center gap-4 flex-wrap">
         {videoData.map((v,i)=>{
           return(
