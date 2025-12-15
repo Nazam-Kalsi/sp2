@@ -10,43 +10,43 @@ const bowlby = Bowlby_One_SC({
 const Products: React.FC = () => {
   const cards = [
      {
-       title: "Camping is for pros",
+       title: "Front-end Loader Attachment",
        src: "/images/4.jpeg",
      },
      {
-       title: "The First Rule",
+       title: "Spring-loaded Cultivator",
        src: "/images/6.jpeg",
      },
      {
-       title: "The road not taken",
+       title: "Super Seeder",
        src: "/images/5.jpeg",
      },
      {
-       title: "Forest Adventure",
+       title: "Pole Erection Machine",
        src: "/images/1.jpeg",
      },
      {
-       title: "The First Rule",
+       title: "Rotary Slasher",
        src: "/images/7.jpeg",
      },
      {
-       title: "The First Rule",
+       title: "Disc Plough",
        src: "/images/11.jpeg",
      },
      {
-       title: "The First Rule",
+       title: "8 Disk Harrow",
        src: "/images/9.jpeg",
      },
      {
-       title: "The First Rule",
+       title: "Hydrolic Harrow",
        src: "/images/8.jpeg",
      },
      {
-       title: "The First Rule",
+       title: "Spring-loaded Cultivator",
        src: "/images/10.jpeg",
      },
      {
-       title: "The First Rule",
+       title: "Front Loader",
        src: "/images/12.jpeg",
      },
    ];

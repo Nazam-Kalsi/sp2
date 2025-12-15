@@ -169,7 +169,7 @@ const HeroSection: React.FC = () => {
             as="h1"
             className={`text-center  font-bold text-[#D96F32] dark:text-[#FCF6D9] ${charm.className}`}
           >
-            Manufacturing perfection
+            Manufacturing Perfection
           </TextAnimate>
         </div>
         <div className="flex gap-10">
